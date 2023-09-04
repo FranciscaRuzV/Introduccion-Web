@@ -1,8 +1,13 @@
+/* Selector global */
+* {
+  box-sizing: content-box;
+}
+
 body {
-  background-color: blue;
+  background-color: rgba(0, 255, 136, 0.291);
 }
 .myli {
-  /* selector de class */
+  /*  . selector de class */
   background-color: bisque;
   color: red;
 }
@@ -11,7 +16,154 @@ header {
   color: blue;
   background-color: red;
 }
+.content-content-box > div {
+  background-color: green;
+  width: 300px;
+  height: 10px;
+  margin: 30px;
+  border: 10px solid black;
+}
 #article1 {
-  /* selector de id */
+  /* # selector de id */
   background-color: aquamarine;
+}
+#myp {
+  color: blue;
+}
+.myp {
+  font-size: 24px;
+}
+.back {
+  background-color: brown;
+}
+.color_rojo {
+  color: red;
+}
+.back_azul {
+  background-color: blue;
+}
+
+/* MODELO DE CAJA */
+
+.contenedor {
+  margin: 50px;
+  background-color: violet;
+  padding: 3px;
+  border: 5px solid red;
+  color: green;
+}
+.contenido {
+  background-color: aquamarine;
+}
+.contenedor-con-imagen {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: aqua;
+  background-image: url("/public/cyberpunk_2077_night_city.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.contenido-con-imagen {
+  background-color: white;
+}
+/* Selectores */
+
+/* Selector por elemento */
+span {
+  font-weight: bold;
+}
+/* Aisgnan los mismos estilos a los elementos con nombres diferentes, en este caso esta regla afecta a todos los elementos <p> y <span> */
+p,
+span {
+  color: blueviolet;
+}
+/* Afecta solo a los elemenos <p> que se encuentran dentro de la estiqueta <main>, ya sea contenido directo o indirecto */
+main p {
+  background-color: aquamarine;
+}
+/* Usa el caracter > para referenciar a un elemento que es hijo directo de .contenedor-parrafo */
+
+.contenedor-parrafo > p {
+  font-size: 35px;
+}
+/* Este selctor hace referencia a elementos que están precedidos por otros elementos; ambos deben estar al mismo nivel */
+
+h1 + p {
+  color: red;
+}
+
+/* Estilos más usados */
+/* Declara un tipo de letra que se usa para mostrar en un texto. Se pueden declarar múltiples valores separados por coma para ofrecer al navegador varias alternativas en caso de que alguna no se encuentre disponible */
+.container {
+  border-top: 1px solid black;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container > .content > p {
+  background-color: white;
+  color: black;
+  font-size: 25px; /* Determina el tamaño de la fuente; puede estar incluido en pixeles (px), puntos(pt), %, rem, em */
+  font-weight: 100 /* bold (100 - 1000) */;
+  font-style: oblique; /* normal, italic, oblique */
+}
+.content > h3 {
+  background-color: bisque;
+  font: bold 30px Arial, sans-serif; /* Permite declarar varios atributos al mismo tiempo, separados por espacio. 1° grosor 2° tamaño 3° familia de fuente */
+  text-align: center; /* left, right, center, justify */
+  line-height: 30px; /* Define el espacio entre lineas */
+}
+
+/* colores */
+.mydiv {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(255, 0, 200);
+  background-image: url("/public/cyberpunk_2077_night_city.jpg");
+}
+.div-in-mydiv {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.9);
+}
+.div-in-mydiv-2 {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #007fff; /* 0 - 9 y A F */
+}
+
+/* Tamaños */
+
+.div-in-mydiv-3 {
+  height: 50px;
+  width: 50px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-color: #00ff00; /* 0 - 9 y A F */
+}
+
+.tamano {
+  margin: 100px 20px;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+.content {
+  height: 400px;
+  width: 200px;
+}
+.tamano-hijo {
+  height: 50%;
+  width: 50%;
+  background-color: red;
+}
+.div-vh-vw {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
 }

@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Estilos con archivos externos -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Estilos embebidos -->
+    <style>
+      .div-ejemplo-embebido {
+        color: red;
+      }
+    </style>
     <header>
       <nav>
         <ul>
@@ -18,5 +25,68 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section>
+        <!-- Content box -->
+        <article class="content-content-box">
+          <div>content box</div>
+        </article>
+        <article>
+          <p>Holi</p>
+          <p class="myp back">Holi 1</p>
+          <p class="myp">Holi 2</p>
+          <p id="myp" class="myp">Holi 3</p>
+          <p class="myp color_rojo back_azul">p con dos clases</p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <!-- Estilo en línea -->
+          <div class="div-ejemplo-embebido" style="background-color: blue">
+            Holi
+          </div>
+        </article>
+        <!-- EJEMPLO DE MODELODE CAJA -->
+        <article>
+          <div class="contenedor">
+            <div class="contenido">Holi</div>
+          </div>
+        </article>
+        <!-- EJEMPLO MODELO CAJA CON IMAGEN -->
+        <article>
+          <div class="contenedor-con-imagen">
+            <div class="contenido-con-imagen">Holi</div>
+          </div>
+        </article>
+        <!-- Selectores -->
+        <article class="content-contenedor-parrafo">
+          <div class="contenedor-parrafo">
+            <h1>Este es el titulo de el párrafo</h1>
+            <p>Este es un <span>párrafo</span></p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Estilos más usados</h2>
+        <article>
+          <div class="container">
+            <div class="content">
+              <p>Párrafo</p>
+              <h3>Este es un detalle</h3>
+              <div class="mydiv">
+                <div class="div-in-mydiv"></div>
+                <div class="div-in-mydiv-2"></div>
+                <div class="div-in-mydiv-3"></div>
+              </div>
+              <div class="tamano">
+                <div class="tamano-hijo">sss</div>
+              </div>
+              <div class="div-vh-vw">Texto</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
