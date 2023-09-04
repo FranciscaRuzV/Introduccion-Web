@@ -1,0 +1,17 @@
+body {
+  background-color: blue;
+}
+.myli {
+  /* selector de class */
+  background-color: bisque;
+  color: red;
+}
+header {
+  /* selector de elemento */
+  color: blue;
+  background-color: red;
+}
+#article1 {
+  /* selector de id */
+  background-color: aquamarine;
+}

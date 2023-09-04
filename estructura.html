@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- DECLARACIÓN DEL TIPO DE DOCUMENTO E IDIOMA para de gestión de caracteres (meta)-->
+    <meta charset="UTF-8" />
+    <!-- Ajuste de escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keyword"
+      content="Esta página se trata articulos de juegos de nintendo"
+    />
+    <!-- INDICA QUIEN O QUIENES SON EL O LOS AUTORES -->
+    <meta name="author" content="Cohorte cyberpunk" />
+    <!-- Derechos de copyrigth -->
+    <meta name="copyrigth" content="@ 2023 cyberpunk" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Configuración del título de la página (Importante para el SEO) -->
+    <title>Estructura HTML</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Inicio del cuerpo de la página -->
+  <body>
+    <header>
+      <!-- Ayuda introductoria o de navegación -->
+      <a href="index.html">
+        <img src="public/Nintendo-Logo.jpg" alt="Nintendo" height="30" />
+      </a>
+      <h1>Estructura de documento HTML</h1>
+      <nav>
+        <ul>
+          <li class="myli"><a href="index.html">Introdución a HTML</a></li>
+          <li class="myli">
+            <a href="estructura.html">Estructura de un documento HTML</a>
+          </li>
+          <li class="myli">
+            <a href="introcss.html">Introducción a CSS</a>
+          </li>
+          <li class="myli"><a href="introjs.html">Introducción a JS</a></li>
+          <li class="myli"><a href="introdom.html">Introducción al DOM</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contenido principal del body -->
+      <!-- Buena practica usar section - article -->
+      <section>
+        <h2>Juegos de Nintendo</h2>
+        <article id="article1">
+          <h3>Mario Bros</h3>
+          <img src="public/mario fondo zom.png" alt="Mario-Bros" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+            corrupti commodi exercitationem ex molestiae quas, excepturi.
+          </p>
+        </article>
+        <article id="article2">
+          <h3>Mario Bros</h3>
+          <img src="public/mario fondo zom.png" alt="Foto2" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            asperiores. Quos doloremque illum quo eligendi, placeat labore
+            fugiat accusamus aliquid voluptas eaque, quaerat at mollitia quamrem
+            tempore sunt deserunt.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- footer pie de página -->
+    <footer>@copy rigth cyberpunk 2023</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
